@@ -110,6 +110,9 @@
             // typeBox
             // 
             this.typeBox.FormattingEnabled = true;
+            this.typeBox.Items.AddRange(new object[] {
+            "User",
+            "Admin"});
             this.typeBox.Location = new System.Drawing.Point(268, 267);
             this.typeBox.Name = "typeBox";
             this.typeBox.Size = new System.Drawing.Size(286, 24);
@@ -134,6 +137,7 @@
             this.saveBtn.TabIndex = 9;
             this.saveBtn.Text = "Save";
             this.saveBtn.UseVisualStyleBackColor = true;
+            this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click_1);
             // 
             // logInPanel
             // 
@@ -223,8 +227,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 502);
-            this.Controls.Add(this.registerPanel);
             this.Controls.Add(this.logInPanel);
+            this.Controls.Add(this.registerPanel);
             this.Name = "MainForm";
             this.Text = "MainForm";
             this.Load += new System.EventHandler(this.MainForm_Load);

@@ -68,11 +68,11 @@
       <DependentUpon>DBDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Info.cs" />
-    <Compile Include="LoginForm.cs">
+    <Compile Include="LandingForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm.Designer.cs">
-      <DependentUpon>LoginForm.cs</DependentUpon>
+    <Compile Include="LandingForm.Designer.cs">
+      <DependentUpon>LandingForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -82,8 +82,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="LoginForm.resx">
-      <DependentUpon>LoginForm.cs</DependentUpon>
+    <EmbeddedResource Include="LandingForm.resx">
+      <DependentUpon>LandingForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
