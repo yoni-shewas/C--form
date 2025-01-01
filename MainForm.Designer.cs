@@ -39,12 +39,12 @@
             this.loginLink = new System.Windows.Forms.LinkLabel();
             this.saveBtn = new System.Windows.Forms.Button();
             this.logInPanel = new System.Windows.Forms.Panel();
-            this.usernameBox = new System.Windows.Forms.TextBox();
-            this.loginPasswordBox = new System.Windows.Forms.TextBox();
-            this.loginBtn = new System.Windows.Forms.Button();
-            this.registerLink = new System.Windows.Forms.LinkLabel();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.registerLink = new System.Windows.Forms.LinkLabel();
+            this.loginBtn = new System.Windows.Forms.Button();
+            this.loginPasswordBox = new System.Windows.Forms.TextBox();
+            this.usernameBox = new System.Windows.Forms.TextBox();
             this.registerPanel = new System.Windows.Forms.Panel();
             this.logInPanel.SuspendLayout();
             this.registerPanel.SuspendLayout();
@@ -152,29 +152,23 @@
             this.logInPanel.Size = new System.Drawing.Size(802, 502);
             this.logInPanel.TabIndex = 10;
             // 
-            // usernameBox
+            // label6
             // 
-            this.usernameBox.Location = new System.Drawing.Point(268, 140);
-            this.usernameBox.Name = "usernameBox";
-            this.usernameBox.Size = new System.Drawing.Size(249, 22);
-            this.usernameBox.TabIndex = 0;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(148, 201);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(69, 16);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "password:";
             // 
-            // loginPasswordBox
+            // label5
             // 
-            this.loginPasswordBox.Location = new System.Drawing.Point(268, 196);
-            this.loginPasswordBox.Name = "loginPasswordBox";
-            this.loginPasswordBox.Size = new System.Drawing.Size(249, 22);
-            this.loginPasswordBox.TabIndex = 1;
-            // 
-            // loginBtn
-            // 
-            this.loginBtn.Location = new System.Drawing.Point(340, 239);
-            this.loginBtn.Name = "loginBtn";
-            this.loginBtn.Size = new System.Drawing.Size(101, 35);
-            this.loginBtn.TabIndex = 2;
-            this.loginBtn.Text = "Login";
-            this.loginBtn.UseVisualStyleBackColor = true;
-            this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(148, 143);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(73, 16);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "user name:";
             // 
             // registerLink
             // 
@@ -186,24 +180,31 @@
             this.registerLink.TabStop = true;
             this.registerLink.Text = "Register";
             this.registerLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.registerLink_LinkClicked);
+            this.registerLink.Click += new System.EventHandler(this.registerLink_Click);
             // 
-            // label5
+            // loginBtn
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(148, 143);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 16);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "user name:";
+            this.loginBtn.Location = new System.Drawing.Point(340, 239);
+            this.loginBtn.Name = "loginBtn";
+            this.loginBtn.Size = new System.Drawing.Size(101, 35);
+            this.loginBtn.TabIndex = 2;
+            this.loginBtn.Text = "Login";
+            this.loginBtn.UseVisualStyleBackColor = true;
+            this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
             // 
-            // label6
+            // loginPasswordBox
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(148, 201);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(69, 16);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "password:";
+            this.loginPasswordBox.Location = new System.Drawing.Point(268, 196);
+            this.loginPasswordBox.Name = "loginPasswordBox";
+            this.loginPasswordBox.Size = new System.Drawing.Size(249, 22);
+            this.loginPasswordBox.TabIndex = 1;
+            // 
+            // usernameBox
+            // 
+            this.usernameBox.Location = new System.Drawing.Point(268, 140);
+            this.usernameBox.Name = "usernameBox";
+            this.usernameBox.Size = new System.Drawing.Size(249, 22);
+            this.usernameBox.TabIndex = 0;
             // 
             // registerPanel
             // 

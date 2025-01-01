@@ -31,5 +31,12 @@ namespace LoginFormAssesment
         {
 
         }
+
+        private void logoutLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            MainForm mainForm = new MainForm();
+            mainForm.Show();
+            this.Hide();
+        }
     }
 }

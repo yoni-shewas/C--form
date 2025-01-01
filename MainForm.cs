@@ -25,7 +25,9 @@ namespace LoginFormAssesment
 
         private void registerLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            logInPanel.Visible = true;
+            registerPanel.Visible = true;
+            logInPanel.Visible = false;
+            
         }
 
         private void loginBtn_Click(object sender, EventArgs e)
@@ -73,12 +75,21 @@ namespace LoginFormAssesment
 
             if (row > 0)
             {
+                logInPanel.Visible = true;
+                registerPanel.Visible = false;
                 MessageBox.Show("Data inserted successfully");
             }
             else
             {
                 MessageBox.Show("Data not inserted");
             }
+
+        }
+
+        private void registerLink_Click(object sender, EventArgs e)
+        {
+            registerPanel.Visible = true;
+            logInPanel.Visible = false;
 
         }
     }

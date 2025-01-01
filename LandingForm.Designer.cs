@@ -48,6 +48,7 @@
             this.logoutLink.TabIndex = 16;
             this.logoutLink.TabStop = true;
             this.logoutLink.Text = "LogOut";
+            this.logoutLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.logoutLink_LinkClicked);
             // 
             // firstNameShowBox
             // 
