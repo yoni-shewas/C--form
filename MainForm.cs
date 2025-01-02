@@ -16,6 +16,7 @@ namespace LoginFormAssesment
         {
             InitializeComponent();
             logInPanel.Visible = false;
+            typeBox.SelectedIndex = 0;
         }
 
         private void MainForm_Load(object sender, EventArgs e)

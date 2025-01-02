@@ -109,6 +109,8 @@
             // 
             // typeBox
             // 
+            this.typeBox.DisplayMember = "User";
+            this.typeBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.typeBox.FormattingEnabled = true;
             this.typeBox.Items.AddRange(new object[] {
             "User",
@@ -196,6 +198,7 @@
             // 
             this.loginPasswordBox.Location = new System.Drawing.Point(268, 196);
             this.loginPasswordBox.Name = "loginPasswordBox";
+            this.loginPasswordBox.PasswordChar = '*';
             this.loginPasswordBox.Size = new System.Drawing.Size(249, 22);
             this.loginPasswordBox.TabIndex = 1;
             // 
