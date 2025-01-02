@@ -46,6 +46,8 @@
             this.loginPasswordBox = new System.Windows.Forms.TextBox();
             this.usernameBox = new System.Windows.Forms.TextBox();
             this.registerPanel = new System.Windows.Forms.Panel();
+            this.passwordRegBox = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.logInPanel.SuspendLayout();
             this.registerPanel.SuspendLayout();
             this.SuspendLayout();
@@ -133,7 +135,7 @@
             // 
             // saveBtn
             // 
-            this.saveBtn.Location = new System.Drawing.Point(360, 321);
+            this.saveBtn.Location = new System.Drawing.Point(360, 353);
             this.saveBtn.Name = "saveBtn";
             this.saveBtn.Size = new System.Drawing.Size(81, 28);
             this.saveBtn.TabIndex = 9;
@@ -211,6 +213,8 @@
             // 
             // registerPanel
             // 
+            this.registerPanel.Controls.Add(this.passwordRegBox);
+            this.registerPanel.Controls.Add(this.label7);
             this.registerPanel.Controls.Add(this.loginLink);
             this.registerPanel.Controls.Add(this.saveBtn);
             this.registerPanel.Controls.Add(this.typeBox);
@@ -225,6 +229,22 @@
             this.registerPanel.Name = "registerPanel";
             this.registerPanel.Size = new System.Drawing.Size(799, 499);
             this.registerPanel.TabIndex = 6;
+            // 
+            // passwordRegBox
+            // 
+            this.passwordRegBox.Location = new System.Drawing.Point(268, 311);
+            this.passwordRegBox.Name = "passwordRegBox";
+            this.passwordRegBox.Size = new System.Drawing.Size(286, 22);
+            this.passwordRegBox.TabIndex = 11;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(131, 311);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(67, 16);
+            this.label7.TabIndex = 10;
+            this.label7.Text = "Password";
             // 
             // MainForm
             // 
@@ -264,6 +284,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel registerPanel;
+        private System.Windows.Forms.TextBox passwordRegBox;
+        private System.Windows.Forms.Label label7;
     }
 }
 

@@ -72,7 +72,7 @@ namespace LoginFormAssesment
             int age = now.Year - dateTimePicker.Value.Year;
 
 
-            int row = db.InsertData("InfoTbl", firstNameBox.Text, lastNameBox.Text, age, typeBox.Text);
+            int row = db.InsertData("InfoTbl", firstNameBox.Text, lastNameBox.Text, age, typeBox.Text, passwordRegBox.Text);
 
             if (row > 0)
             {

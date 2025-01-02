@@ -28,7 +28,7 @@ namespace LoginFormAssesment
 
 
         }
-        public int InsertData(string tableName, string firstName, string lastName, int age, string type)
+        public int InsertData(string tableName, string firstName, string lastName, int age, string type,string password)
         {
             try
             {
@@ -37,7 +37,7 @@ namespace LoginFormAssesment
 
                 string username = lastName + "_" + firstName + "@" + $"{age}";
 
-                string queryAccount = $"INSERT INTO AccountTbl (UserName, Password, infoID) VALUES ('{username}', '123', '{firstName}')";
+                string queryAccount = $"INSERT INTO AccountTbl (UserName, Password, infoID) VALUES ('{username}', '{password}', '{firstName}')";
 
                 //save user data to info table
                 SqlCommand cmd = new SqlCommand(queryInfo, conn);
@@ -45,6 +45,7 @@ namespace LoginFormAssesment
 
                 //account creation for the registerd user
                 cmd = new SqlCommand(queryAccount, conn);
+
 
 
 
